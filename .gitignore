@@ -1,0 +1,12 @@
+node_modules/
+dist/
+*.tsbuildinfo
+.playwright-cli/
+output/
+.scratch/
+.DS_Store
+.env
+.env.*
+*.pem
+*.key
+*.log
