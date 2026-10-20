@@ -1,10 +1,10 @@
 # Recreo — browser-only booking demo
 
-A responsive React 19 + TypeScript + Vite website for Recreo Development and Therapy Center, using variant A of the supplied blue-and-white reference design. No backend or accounts. No deployment or Git changes were made.
+A React 19 + TypeScript + Vite website for Recreo Development and Therapy Center, using variant A of the supplied blue-and-white reference design. No backend or accounts. The active design is a single scrolling page, with current refinements focused on desktop.
 
 ## Run locally
 
-Node.js 22.12+ (verified using Node 24.21.0) and npm are required.
+Node.js 24.21.0 (pinned in `.node-version`) and npm are required.
 
 ```sh
 npm ci
@@ -29,6 +29,25 @@ npm run format:check
 ```
 
 `npm run format` formats application source and documentation. Vendored beUI files are excluded from lint because they preserve the library’s source conventions; they are included in strict TypeScript compilation.
+
+## Render deployment
+
+Source: [Joshclxx/Clinical-Website](https://github.com/Joshclxx/Clinical-Website), branch `main`.
+
+Deploy the repository as a **Static Site** in **My Workspace**. The connected Render plugin manages service configuration directly; this single static frontend does not require a Blueprint.
+
+| Setting           | Value                                                                      |
+| ----------------- | -------------------------------------------------------------------------- |
+| Root directory    | Repository root                                                            |
+| Build command     | `npm ci --include=dev && npm run build`                                    |
+| Publish directory | `dist`                                                                     |
+| Build environment | `SKIP_INSTALL_DEPS=true` (dependency installation is in the build command) |
+| Node version      | `24.21.0` from `.node-version`                                             |
+| Auto deploy       | On commit to `main`                                                        |
+
+No start command, port binding, database, application environment variables, or secrets are needed. Render serves the compiled assets over HTTPS. Navigation uses hash anchors such as `/#book` and `/#ticket`, so no path rewrite is required. A refreshed `/#ticket` shows the empty-ticket state because demo records exist only in browser memory.
+
+`dist/`, dependencies, local screenshots, scratch files, environment files, and credentials are excluded from Git. The archived prototypes remain source references and are not included in the production build.
 
 ## Experiences
 
