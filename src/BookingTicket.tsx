@@ -97,7 +97,7 @@ export default function BookingTicket({
           <ShieldCheck size={20} aria-hidden="true" />
           <span>
             <strong>Fictional demo details.</strong> No real appointment is
-            scheduled or sent to Recreo.
+            scheduled or sent to JW-Tech.
           </span>
         </p>
       </article>
@@ -119,7 +119,7 @@ export default function BookingTicket({
           appointment history is kept.
         </p>
         <ExternalClinicLink>
-          Contact Recreo to arrange a real visit
+          Contact JW-Tech to arrange a real visit
         </ExternalClinicLink>
       </div>
     </section>

@@ -105,7 +105,7 @@ export default function SiteHeader({
           href={clinic.facebook}
           target="_blank"
           rel="noopener noreferrer"
-          aria-label="Contact Recreo on Facebook (opens a new tab)"
+          aria-label="Contact JW-Tech on Facebook (opens a new tab)"
         >
           <MessageCircle aria-hidden="true" />
         </a>

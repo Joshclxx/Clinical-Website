@@ -440,7 +440,7 @@ export default function Booking({
           <p className="booking-office-note">
             Monday–Friday, 9 AM–5 PM.
             <br />
-            Contact Recreo to confirm a real visit.
+            Contact JW-Tech to confirm a real visit.
           </p>
         </aside>
       </div>

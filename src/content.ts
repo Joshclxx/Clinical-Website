@@ -1,6 +1,7 @@
 export const clinic = {
-  name: "Recreo",
-  fullName: "Recreo Development and Therapy Center",
+  name: "JW-Tech",
+  fullName: "JW-Tech",
+  logo: "./assets/jw-tech-logo.png",
   city: "Cabanatuan City",
   hours: "Monday–Friday · 9:00 AM–5:00 PM",
   facebook: "https://www.facebook.com/recreo.dev/",
@@ -49,7 +50,7 @@ export const faqs = [
     id: "appointments",
     title: "How can I arrange a visit?",
     description:
-      "Visits are by appointment only. Contact Recreo through its official Facebook page to confirm a service, available times, and the details of your visit.",
+      "Visits are by appointment only. Contact JW-Tech through its official Facebook page to confirm a service, available times, and the details of your visit.",
   },
   {
     id: "hours",
@@ -59,14 +60,14 @@ export const faqs = [
   },
   {
     id: "location",
-    title: "Where is Recreo located?",
+    title: "Where is JW-Tech located?",
     description:
-      "Recreo Development and Therapy Center is in Cabanatuan City, Philippines. Contact the center for the exact address and directions before your visit.",
+      "JW-Tech is in Cabanatuan City, Philippines. Contact the center for the exact address and directions before your visit.",
   },
   {
     id: "services",
     title: "How do I find the right service?",
     description:
-      "Connect with the center to ask about its current services and care team. The session options shown here are illustrative; Recreo can confirm which services are available.",
+      "Connect with the center to ask about its current services and care team. The session options shown here are illustrative; JW-Tech can confirm which services are available.",
   },
 ];

@@ -812,11 +812,10 @@ html {
   overflow: hidden;
 }
 .reference-home .footer-logo img {
-  position: absolute;
-  width: 98px;
-  max-width: none;
-  left: -32px;
-  top: -13px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 .booking-section .booking-main {
   background: #fff;

@@ -9,12 +9,10 @@ export { Card } from "./beui/card";
 export { BouncyAccordion } from "./beui/bouncy-accordion";
 export function Brand() {
   return (
-    <a className="brand" href="#home" aria-label="Recreo home">
-      <img src="./assets/recreo-original-logo.jpg" alt="" />
+    <a className="brand" href="#home" aria-label={`${clinic.name} home`}>
+      <img src={clinic.logo} alt="" />
       <span>
-        <strong>
-          Recreo<span className="brand-dot">.</span>
-        </strong>
+        <strong>{clinic.name}</strong>
         <small>Development & Therapy Center</small>
       </span>
     </a>
@@ -91,7 +89,7 @@ export function SessionNote() {
   return (
     <p className="session-note">
       Online booking preview. No real appointment is scheduled or sent to
-      Recreo. Use fictional details; records clear on refresh.
+      JW-Tech. Use fictional details; records clear on refresh.
     </p>
   );
 }

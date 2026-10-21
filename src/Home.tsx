@@ -53,7 +53,7 @@ export default function Home({
             className="hero-portrait"
             fetchPriority="high"
             src="./assets/illustrative-care-portrait.png"
-            alt="Illustrative fictional care professional, not a Recreo staff member"
+            alt="Illustrative fictional care professional, not a JW-Tech staff member"
           />
           <div className="hero-aside">
             <span className="eyebrow">HERE FOR YOUR NEXT STEP</span>
@@ -96,7 +96,7 @@ export default function Home({
         </div>
       </section>
       <section className="intro" id="about">
-        <span className="eyebrow">RECREO · DEVELOPMENT & THERAPY CENTER</span>
+        <span className="eyebrow">JW-Tech · DEVELOPMENT & THERAPY CENTER</span>
         <h2>
           A little space to{" "}
           <span className="inline-plus" aria-hidden="true">
@@ -108,8 +108,8 @@ export default function Home({
           <strong>Room to grow, one step at a time.</strong>
         </h2>
         <p>
-          Get to know Recreo Development and Therapy Center in Cabanatuan City.
-          Visit on weekdays, by appointment.
+          Get to know JW-Tech in Cabanatuan City. Visit on weekdays, by
+          appointment.
         </p>
         <a
           className="primary"
@@ -180,7 +180,7 @@ export default function Home({
           })}
         </div>
         <p className="services-note">
-          Illustrative session options and durations. Contact Recreo to confirm
+          Illustrative session options and durations. Contact JW-Tech to confirm
           current services and availability.
         </p>
       </section>
@@ -237,7 +237,7 @@ export default function Home({
               <div>
                 <h3>Keep your reference</h3>
                 <p>
-                  Review your details and save your demo ticket. Contact Recreo
+                  Review your details and save your demo ticket. Contact JW-Tech
                   to confirm a real appointment.
                 </p>
               </div>
@@ -293,7 +293,7 @@ export default function Home({
             <MessageCircle aria-hidden="true" />
             <div>
               <small>LET’S TALK</small>
-              <p>Recreo on Facebook</p>
+              <p>JW-Tech on Facebook</p>
               <span>For confirmed appointments and current services.</span>
             </div>
           </div>
@@ -301,9 +301,9 @@ export default function Home({
       </section>
       <footer className="footer">
         <div className="footer-brand">
-          <strong>Recreo.</strong>
+          <strong>{clinic.name}</strong>
           <span className="footer-logo" aria-hidden="true">
-            <img src="./assets/recreo-original-logo.jpg" alt="" />
+            <img src={clinic.logo} alt="" />
           </span>
         </div>
         <span>
